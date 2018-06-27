@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="edi.500.1" system="knb" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access system="https://pasta.lternet.edu" scope="document" order="allowFirst" authSystem="https://pasta.lternet.edu/authentication">
+    <allow>
+      <principal>uid=person_name,o=EDI,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier>edi.500</alternateIdentifier>
+    <shortName>RFS</shortName>
+    <title>Riparian seedling mortality in flooding in a flume study</title>
+    <creator>
+      <individualName>
+        <givenName>Li</givenName>
+        <surName>Kui</surName>
+      </individualName>
+      <electronicMailAddress>lkui@ucsb.edu</electronicMailAddress>
+      <userId directory="http://orcid.org/">https://orcid.org/0000-0002-5894-4907</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John C</givenName>
+        <surName>Stella</surName>
+      </individualName>
+      <electronicMailAddress>stella@esf.edu</electronicMailAddress>
+    </creator>
+    <pubDate>2018-06-07</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+  Abstract for plants
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>c("Richmon Field Station", "cottonwood", "tamarisk", "flume", "flood", "mortality", "seedlings")</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This data package is released under the Creative Commons license
+  Attribution 4.0 International (CC BY 4.0 , see
+  <ulink url="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ulink>).
+  This license states that consumers ("Data Users" herein) may
+  distribute, adapt, reuse, remix, and build upon this work, as long as
+  they give appropriate credit, provide a link to the license, and
+  indicate if changes were made. If redistributed, a Data User may not
+  apply additional restrictions or technological measures that prevent
+  access.
+</para>
+      <para>
+  The Data User has an ethical obligation to cite the data source
+  appropriately in any publication or product that results from its use,
+  and notify the data contact or creator. Communication, collaboration,
+  or co-authorship (as appropriate) with the creators of this data
+  package is encouraged to prevent duplicate research or publication.
+  The Data User is urged to contact the authors of these data if any
+  questions about methodology or results occur. The Data User should
+  realize that these data may be actively used by others for ongoing
+  research and that coordination may be necessary to prevent duplication
+  or inappropriate use. The Data User should realize that
+  misinterpretation may occur if data are used outside of the context of
+  the original study. The Data User should be aware that data are
+  updated periodically and it is the responsibility of the Data User to
+  check for new versions of the data.
+</para>
+      <para>
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy of data sets cannot be
+  guaranteed. This data package (with its components) is made available
+  “as is” and with no warranty of accuracy or fitness for use. The
+  creators of this data package and the repository where these data were
+  obtained shall not be liable for any damages resulting from
+  misinterpretation, use or misuse of the data package or its
+  components.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>University of California Berkeley</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119</eastBoundingCoordinate>
+          <northBoundingCoordinate>34</northBoundingCoordinate>
+          <southBoundingCoordinate>34</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1400457600</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1408320000</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <organizationName>ABC</organizationName>
+      <positionName>Information Manager</positionName>
+      <address>
+        <deliveryPoint>###</deliveryPoint>
+        <deliveryPoint>###</deliveryPoint>
+        <city>###</city>
+        <administrativeArea>###</administrativeArea>
+        <postalCode>###</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>abc@abc.com</electronicMailAddress>
+      <onlineUrl>http://abc.com</onlineUrl>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+  Method for plants
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>plant structure traits</entityName>
+      <entityDescription>plant morphological traits for the seedling structure measurement</entityDescription>
+      <physical>
+        <objectName>plant_structure_traits.csv</objectName>
+        <size unit="byte">2862</size>
+        <authentication method="MD5">91cae0e43c67c6d6c70dea687dab787e</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">http://aaa/plant_structure_traits.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>plantid</attributeName>
+          <attributeLabel>Plant ID</attributeLabel>
+          <attributeDefinition>Plant ID</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeLabel>Species</attributeLabel>
+          <attributeDefinition>Species, either cottonwood or tamarisk</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hei_cm</attributeName>
+          <attributeLabel>Plant height</attributeLabel>
+          <attributeDefinition>Plant height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>leaf_num</attributeName>
+          <attributeLabel>Leaf number</attributeLabel>
+          <attributeDefinition>Leaf number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dia_mm</attributeName>
+          <attributeLabel>Diameter</attributeLabel>
+          <attributeDefinition>Diameter at the root crown</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>bend_fce_g</attributeName>
+          <attributeLabel>Bending force</attributeLabel>
+          <attributeDefinition>Force taken to bend the steam at 45 degree angle</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>roting_dep_cm</attributeName>
+          <attributeLabel>Rooting depth</attributeLabel>
+          <attributeDefinition>Maximum rooting depth of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_len_cm</attributeName>
+          <attributeLabel>Rooting length</attributeLabel>
+          <attributeDefinition>Maximum root length</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ro_dia_5</attributeName>
+          <attributeLabel>Root diameter at 5 cm</attributeLabel>
+          <attributeDefinition>Root diameter at 5 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ro_dia_15</attributeName>
+          <attributeLabel>Root diameter at 15 cm</attributeLabel>
+          <attributeDefinition>Root diameter at 15 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ro_dia_25</attributeName>
+          <attributeLabel>Root diameter at 25 cm</attributeLabel>
+          <attributeDefinition>Root diameter at 25 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_5_g</attributeName>
+          <attributeLabel>Root weight at 5 cm</attributeLabel>
+          <attributeDefinition>Root dry weight between 0 to 5 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_10_g</attributeName>
+          <attributeLabel>Root weight at 10 cm</attributeLabel>
+          <attributeDefinition>Root dry weight between 5 to 10 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_15_g</attributeName>
+          <attributeLabel>Root weight at 15 cm</attributeLabel>
+          <attributeDefinition>Root dry weight between 10 to 15 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_20_g</attributeName>
+          <attributeLabel>Root weight at 20 cm</attributeLabel>
+          <attributeDefinition>Root dry weight between 15 to 20 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_25_g</attributeName>
+          <attributeLabel>Root weight at 25 cm</attributeLabel>
+          <attributeDefinition>Root dry weight between 20 to 25 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>aboveground_g</attributeName>
+          <attributeLabel>Aboveground weight</attributeLabel>
+          <attributeDefinition>The dry weight for aboveground part of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>total.frontal.area</attributeName>
+          <attributeLabel>Total frontal area</attributeLabel>
+          <attributeDefinition>Total area of the plant, both aboveground and belowground, that perpendicular to the flow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>squareCentimeter</customUnit>
+              </unit>
+              <precision>1e-04</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>34</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>plant structure frontal area</entityName>
+      <entityDescription>plant frontal area for the seedling structure measurement</entityDescription>
+      <physical>
+        <objectName>plant_structure_frontal_area.csv</objectName>
+        <size unit="byte">25827</size>
+        <authentication method="MD5">8ac3bcd81dffeba07cc841363590370e</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">http://aaa/plant_structure_frontal_area.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>plantid</attributeName>
+          <attributeLabel>Plant ID</attributeLabel>
+          <attributeDefinition>Plant ID</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>plant_vertical_location</attributeName>
+          <attributeLabel>Frontal area density location</attributeLabel>
+          <attributeDefinition>The location of the frontal area was measured, at 10 mm intervel, 0 value is the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>total.frontal.area</attributeName>
+          <attributeLabel>Total frontal area</attributeLabel>
+          <attributeDefinition>Total area of the plant, both aboveground and belowground, that perpendicular to the flow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>squareCentimeter</customUnit>
+              </unit>
+              <precision>1e-04</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>1919</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>plant mortality in flume</entityName>
+      <entityDescription>plant mortality in the flume experiment and their growth traits</entityDescription>
+      <physical>
+        <objectName>plant_all.csv</objectName>
+        <size unit="byte">2593</size>
+        <authentication method="MD5">d99c9e028da50ecf3ea4e88698379071</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">http://aaa/plant_all.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>run</attributeName>
+          <attributeLabel>run number</attributeLabel>
+          <attributeDefinition>flume run number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeLabel>Species</attributeLabel>
+          <attributeDefinition>Species, either cottonwood or tamarisk</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>density</attributeName>
+          <attributeLabel>Density</attributeLabel>
+          <attributeDefinition>Density in sparse (21 plants per square meter), dense (92 plants per sqaure meter), individual (1 plants per sqaure meter)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>location_m</attributeName>
+          <attributeLabel>Location</attributeLabel>
+          <attributeDefinition>Location downstream of the flume entrance</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>status_def</attributeName>
+          <attributeLabel>plant status</attributeLabel>
+          <attributeDefinition>Plant status after sediment deficit experimental flood</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>time_elapse_min</attributeName>
+          <attributeLabel>Time elapse</attributeLabel>
+          <attributeDefinition>Time elapse since flume run started</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>minute</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hei_cm</attributeName>
+          <attributeLabel>Plant height</attributeLabel>
+          <attributeDefinition>Plant height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>leaf_num</attributeName>
+          <attributeLabel>Leaf number</attributeLabel>
+          <attributeDefinition>Leaf number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Value not recorded or not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>dia_mm</attributeName>
+          <attributeLabel>Diameter</attributeLabel>
+          <attributeDefinition>Diameter at the root crown</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_length_cm</attributeName>
+          <attributeLabel>Rooting length</attributeLabel>
+          <attributeDefinition>Maximum root length</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>above_g</attributeName>
+          <attributeLabel>Aboveground weight</attributeLabel>
+          <attributeDefinition>The dry weight for aboveground part of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>below_g</attributeName>
+          <attributeLabel>Belowground weight</attributeLabel>
+          <attributeDefinition>The dry weight for belowground part of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sed_diff</attributeName>
+          <attributeLabel>Sediment change</attributeLabel>
+          <attributeDefinition>The sediment surface change between pre and post run</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Value not recorded or not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>38</numberOfRecords>
+    </dataTable>
+    <otherEntity>
+      <entityName>plant trait R code</entityName>
+      <entityDescription>the R code calculating plant traits</entityDescription>
+      <physical>
+        <objectName>RFS_PlantTraits_v160305.R</objectName>
+        <size unit="byte">94061</size>
+        <authentication method="MD5">47b97780874d2e870393fe28c7e41efb</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>R program code</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">http://aaa/RFS_PlantTraits_v160305.R</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>otherEntity</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <unit id="centimeter" abbreviation="cm" name="centimeter" parentSI="meter" unitType="NA" multiplierToSI="0.01">
+          <description>.01 meters</description>
+        </unit>
+        <unit id="number" name="number" unitType="dimensionless">
+          <description>a number</description>
+        </unit>
+        <unit id="millimeter" abbreviation="mm" name="millimeter" parentSI="meter" unitType="NA" multiplierToSI="0.001">
+          <description>.001 meters</description>
+        </unit>
+        <unit id="gram" abbreviation="g" name="gram" parentSI="kilogram" unitType="mass" multiplierToSI="0.001">
+          <description>0.001 kg</description>
+        </unit>
+        <unit id="squareCentimeter" name="NA" unitType="NA"/>
+        <unit id="meter" abbreviation="m" name="meter" unitType="length" multiplierToSI="1">
+          <description>SI unit of length</description>
+        </unit>
+        <unit id="minute" abbreviation="min" name="minute" parentSI="second" unitType="NA" multiplierToSI="60">
+          <description>60 seconds</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
