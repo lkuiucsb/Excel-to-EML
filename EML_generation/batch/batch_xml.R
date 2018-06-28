@@ -15,31 +15,31 @@ source("EML_funs/dataset.r")
 # input excel
 wb <-"../Metadata/Metadata.xlsx"
 
-dataset <- read_xlsx (wb, sheet = "DataSet",na="")
-meta <- read_xlsx (wb, sheet = "DataSetAttributes",na="")
-fact<- read_xlsx (wb, sheet = "EMLAttributeCodeDefinition",na="")
+dataset <- as.data.frame(read_xlsx (wb, sheet = "DataSet",na=""))
+meta <- as.data.frame(read_xlsx (wb, sheet = "DataSetAttributes",na=""))
+fact<- as.data.frame(read_xlsx (wb, sheet = "EMLAttributeCodeDefinition",na=""))
 
-unit_raw <- read_xlsx (wb, sheet = "EMLUnitDictionary",na="")
+unit_raw <- as.data.frame(read_xlsx (wb, sheet = "EMLUnitDictionary",na=""))
 
-unit <- meta %>%
+unit <- as.data.frame(meta) %>%
   select(datasetid,unit) %>%
   distinct() %>%
   filter(!is.na(unit)) %>%
   rename(id=unit) %>%
   left_join(unit_raw,by="id")
 
-creator <- read_xlsx  (wb, sheet = "DataSetPersonnel", na="")
-keyword <- read_xlsx  (wb, sheet = "DataSetKeywords", na="")
+creator <- as.data.frame(read_xlsx  (wb, sheet = "DataSetPersonnel", na=""))
+keyword <- as.data.frame(read_xlsx  (wb, sheet = "DataSetKeywords", na=""))
 
-filetype <- read_xlsx  (wb, sheet = "FileTypeList", na="")
+filetype <- as.data.frame(read_xlsx  (wb, sheet = "FileTypeList", na=""))
 
-entities <-read_xlsx  (wb, sheet = "DataSetEntities", na="")%>%
+entities <-as.data.frame(read_xlsx  (wb, sheet = "DataSetEntities", na=""))%>%
   left_join(filetype, by="filetype")
 
-method <- read_xlsx  (wb, sheet = "DataSetMethods", na="")
+method <- as.data.frame(read_xlsx  (wb, sheet = "DataSetMethods", na=""))
 
-geo <- read_xlsx  (wb, sheet = "DataSetSites", na="")
+geo <- as.data.frame(read_xlsx  (wb, sheet = "DataSetSites", na=""))
 
-tempo <- read_xlsx (wb, sheet = "DataSetTemporal", na="") 
+tempo <- as.data.frame(read_xlsx (wb, sheet = "DataSetTemporal", na="") )
 
 

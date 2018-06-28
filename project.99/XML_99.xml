@@ -37,7 +37,13 @@
 </para>
     </abstract>
     <keywordSet>
-      <keyword>c("Richmon Field Station", "cottonwood", "tamarisk", "flume", "flood", "mortality", "seedlings")</keyword>
+      <keyword>Richmon Field Station</keyword>
+      <keyword>cottonwood</keyword>
+      <keyword>tamarisk</keyword>
+      <keyword>flume</keyword>
+      <keyword>flood</keyword>
+      <keyword>mortality</keyword>
+      <keyword>seedlings</keyword>
     </keywordSet>
     <intellectualRights>
       <para>
@@ -91,10 +97,10 @@
       <temporalCoverage>
         <rangeOfDates>
           <beginDate>
-            <calendarDate>1400457600</calendarDate>
+            <calendarDate>2014-05-19</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>1408320000</calendarDate>
+            <calendarDate>2014-08-18</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>

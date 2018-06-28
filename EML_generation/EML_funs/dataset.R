@@ -158,9 +158,9 @@ nkey<-unique(keyword1$keyword_thesaurus)
 
 for (i in 1: length(nkey)) {
   if ( nkey[i]=="none") {
-    k<-new("keywordSet", keyword = as.character(keyword1[keyword1$keyword_thesaurus==nkey[i],"keyword"]))
+    k<-new("keywordSet", keyword = as.vector(keyword1[keyword1$keyword_thesaurus==nkey[i],"keyword"]))
   }else {
-  k <- new("keywordSet", keyword = as.character(keyword1[keyword1$keyword_thesaurus==nkey[i],"keyword"]),keywordThesaurus = nkey[i])
+  k <- new("keywordSet", keyword = as.vector(keyword1[keyword1$keyword_thesaurus==nkey[i],"keyword"]),keywordThesaurus = nkey[i])
   }
   
   if (i == 1) {
