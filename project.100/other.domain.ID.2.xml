@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="other.domain.ID.2" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="edi">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>stellalab</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>giant kelp</title>
+    <creator>
+      <individualName>
+        <givenName>Robert</givenName>
+        <givenName>J</givenName>
+        <surName>Miller</surName>
+      </individualName>
+      <organizationName>UCSB</organizationName>
+      <electronicMailAddress>placeholder@msi.ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
+    </creator>
+    <pubDate>2020-06-15</pubDate>
+    <abstract>
+      <para>
+  This is abstract
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>giant kelp</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data ("Data User" herein) is required
+  to cite it appropriately in any publication that results from its use.
+  The Data User should realize that these data may be actively used by
+  others for ongoing research and that coordination may be necessary to
+  prevent duplicate publication. The Data User is urged to contact the
+  authors of these data if any questions about methodology or results
+  occur. Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>site</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122</westBoundingCoordinate>
+          <eastBoundingCoordinate>-122</eastBoundingCoordinate>
+          <northBoundingCoordinate>34</northBoundingCoordinate>
+          <southBoundingCoordinate>33</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2008-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2020-01-01</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>Completed</description>
+    </maintenance>
+    <contact>
+      <organizationName>SBC MBON</organizationName>
+      <electronicMailAddress>sbcbon@msi.ucsb.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+  This is method.
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>PISCO</title>
+      <personnel>
+        <individualName>
+          <givenName>Robert</givenName>
+          <givenName>J</givenName>
+          <surName>Miller</surName>
+        </individualName>
+        <organizationName>UCSB</organizationName>
+        <electronicMailAddress>placeholder@msi.ucsb.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
+        <role>Principal Investigator</role>
+      </personnel>
+      <funding>NSF0000</funding>
+    </project>
+    <dataTable>
+      <entityName>Giant kelp</entityName>
+      <entityDescription>Giant kelp</entityDescription>
+      <physical>
+        <objectName>Giant_Kelp.csv</objectName>
+        <size unit="bytes">871678</size>
+        <authentication method="MD5">18035f83a485c2e8a72361dd7ba880fc</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/Giant_Kelp.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>DATE</attributeName>
+          <attributeDefinition>DATE</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM/DD/YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SITE</attributeName>
+          <attributeDefinition>SITE</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>SITE</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SP_CODE</attributeName>
+          <attributeDefinition>SP_CODE</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>SP_CODE</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>COUNT</attributeName>
+          <attributeDefinition>COUNT</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">298</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-99999</code>
+            <codeExplanation>value is not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>SCIENTIFIC_NAME</attributeName>
+          <attributeDefinition>SCIENTIFIC_NAME</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>SCIENTIFIC_NAME</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>20550</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="number" name="number" parentSI="" unitType="dimensionless">
+          <description>a number</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

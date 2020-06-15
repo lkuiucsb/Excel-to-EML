@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.235.2" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="edi">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=lkui,o=EDI,dc=edirepository,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>Data to support manuscript "Can environmental flows moderate riparian invasions? The influence of seedling morphology and density on scour losses in experimental floods"</title>
+    <creator>
+      <individualName>
+        <givenName>Li</givenName>
+        <surName>Kui</surName>
+      </individualName>
+      <organizationName>UCSB</organizationName>
+      <electronicMailAddress>lkui@ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John</givenName>
+        <givenName>C.</givenName>
+        <surName>Stella</surName>
+      </individualName>
+      <organizationName>SUNY-ESF</organizationName>
+      <electronicMailAddress>placeholder@esf.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
+    </creator>
+    <pubDate>2020-06-15</pubDate>
+    <abstract>
+      <para>Abstract</para>
+      <para>
+    Try some wired things here: 1. Subscript CO<subscript>2</subscript>.
+    2. <emphasis>Scientific name</emphasis> 3. with hyperlink Link:
+    lkui@ucsb.edu
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword>BasisofRecord: HumanObservation</keyword>
+      <keyword>Occurrence: OrganismQuantity</keyword>
+      <keyword>Taxon: ScientificName</keyword>
+      <keywordThesaurus>Darwin Core Terms</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Population Abundance</keyword>
+      <keywordThesaurus>Essential Biodiversity Vocabularies</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Richmon Field Station</keyword>
+      <keyword>cottonwood</keyword>
+      <keyword>tamarisk</keyword>
+      <keyword>flume</keyword>
+      <keyword>flood</keyword>
+      <keyword>mortality</keyword>
+      <keyword>seedlings</keyword>
+      <keyword>plant invasion</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data ("Data User" herein) is required
+  to cite it appropriately in any publication that results from its use.
+  The Data User should realize that these data may be actively used by
+  others for ongoing research and that coordination may be necessary to
+  prevent duplicate publication. The Data User is urged to contact the
+  authors of these data if any questions about methodology or results
+  occur. Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>University of California Berkeley</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122.33</westBoundingCoordinate>
+          <eastBoundingCoordinate>-122.33</eastBoundingCoordinate>
+          <northBoundingCoordinate>37.9155</northBoundingCoordinate>
+          <southBoundingCoordinate>37.9155</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>field site</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122.34</westBoundingCoordinate>
+          <eastBoundingCoordinate>-122.34</eastBoundingCoordinate>
+          <northBoundingCoordinate>37.92</northBoundingCoordinate>
+          <southBoundingCoordinate>37.92</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2013-07-05</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2013-07-29</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>Completed</description>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>John</givenName>
+        <givenName>C.</givenName>
+        <surName>Stella</surName>
+      </individualName>
+      <organizationName>SUNY-ESF</organizationName>
+      <electronicMailAddress>placeholder@esf.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+  1. Experimental setup and plant propagation
+</para>
+          <para>
+  To acquire plants for our experiments, we collected live cottonwood
+  and tamarisk seedlings (including <emphasis>T. ramosissima</emphasis>
+  Ledebour<emphasis>, T. chinensis</emphasis> Loureiro, and <emphasis>T.
+  parviflora</emphasis>) from the Bill Williams River (AZ), Virgin River
+  (NV) and San Joaquin River basins in March 2013. Plants were
+  greenhouse-healed for two months in vermiculite, and then shipped as
+  bare-root plants to the RFS.
+</para>
+          <para>
+  2. Plant morphological traits
+</para>
+          <para>
+  We used a random subsample of 90 plants (47 cottonwood and 43
+  tamarisk) to quantify differences in morphological traits between
+  species. At the end of the transplant and growth period, plants were
+  carefully removed from their pots and rinsed of sand.
+</para>
+          <para>
+  3. Flood experiment design
+</para>
+          <para>
+  We conducted 10 flume runs that differed with respect to species,
+  plant size, and density. Individual plants were tested in five of the
+  trials, in which 4–5 plants were installed ca. 3 m apart within a 12-m
+  long test section.
+</para>
+          <para>
+  References:
+</para>
+          <para>
+  Bywater-Reyes S., Wilcox A.C., Stella J.C. &amp; Lightbody A.F. (2015)
+  Flow and scour constraints on uprooting of pioneer woody seedlings.
+  <emphasis>Water Resource Research,</emphasis> 51, 9190-9206.Edmaier
+  K., Crouzy B. &amp; Perona P. (2015) Experimental characterization of
+  vegetation uprooting by flow. <emphasis>Journal of Geophysical
+  Research: Biogeosciences,</emphasis> 120, 2169-8953.Khuder H., Stokes
+  A., Danjon F., Gouskou K. &amp; Lagane F. (2007) Is it possible to
+  manipulate root anchorage in young trees? <emphasis>Plant and
+  Soil,</emphasis> 294, 87-102.Kondolf G.M. (1997) Hungry water: Effects
+  of dams and gravel mining on river channels. <emphasis>Environmental
+  Management,</emphasis> 21, 533-551.Kui L., Stella J.C., Lightbody A.F.
+  &amp; Wilcox A.C. (2014) Ecogeomorphic feedbacks and flood loss of
+  riparian tree seedlings in meandering channel experiments.
+  <emphasis>Water Resource Research</emphasis>.Manners R., Wilcox A.C.,
+  Kui L., Lightbody A.F., Stella J. &amp; Sklar L.S. (2015) When do
+  plants modify fluvial processes? Plant-hydraulic interactions under
+  variable flow and sediment supply rates. <emphasis>Journal of
+  Geophysical Research - Earth Surface,</emphasis> 120, 325-345.Rominger
+  J.T., Lightbody A.F. &amp; Nepf H.M. (2010) Effects of added
+  vegetation on sand bar stability and stream hydrodynamics.
+  <emphasis>Journal of Hydraulic Engineering-Asce,</emphasis> 136,
+  994-1002.Scott M.L., Shafroth P.B. &amp; Auble G.T. (1999) Responses
+  of riparian cottonwoods to alluvial water table declines.
+  <emphasis>Environmental Management,</emphasis> 23, 347-358.Taylor
+  J.P., Wester D.B. &amp; Smith L.M. (1999) Soil disturbance, flood
+  management, and riparian woody plant establishment in the Rio Grande
+  floodplain. <emphasis>Wetlands,</emphasis> 19, 372-382.
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>The interaction between river morphology and riparian vegetation</title>
+      <personnel>
+        <individualName>
+          <givenName>John</givenName>
+          <givenName>C.</givenName>
+          <surName>Stella</surName>
+        </individualName>
+        <organizationName>SUNY-ESF</organizationName>
+        <electronicMailAddress>placeholder@esf.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
+        <role>Principal Investigator</role>
+      </personnel>
+      <funding>NSF1111111</funding>
+    </project>
+    <dataTable>
+      <entityName>Plant response in flume trials</entityName>
+      <entityDescription>Plant dislodgement and burial responses in the ten flume trials and their morphological traits (n = 484).</entityDescription>
+      <physical>
+        <objectName>Plant_response_in_flume_trials.csv</objectName>
+        <size unit="bytes">28387</size>
+        <authentication method="MD5">c9b7c5662c5e44fb50ea856406e1293d</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/Plant_response_in_flume_trials.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>run</attributeName>
+          <attributeDefinition>flume run number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>flume run number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeDefinition>Species, either cottonwood or tamarisk</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Species, either cottonwood or tamarisk</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>density</attributeName>
+          <attributeDefinition>Density in sparse (21 plants per square meter), dense (92 plants per sqaure meter), individual (1 plants per sqaure meter)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Density in sparse (21 plants per square meter), dense (92 plants per sqaure meter), individual (1 plants per sqaure meter)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>location_m</attributeName>
+          <attributeDefinition>Location downstream of the flume entrance</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">13.61</minimum>
+                  <maximum exclusive="false">24.65</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>status_def</attributeName>
+          <attributeDefinition>Plant status after sediment deficit experimental flood</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>dl</code>
+                    <definition>plant dislodged from the installed location</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>rm</code>
+                    <definition>Plant remained at the installed location</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>br</code>
+                    <definition>Plant was buried below the sediment deposition</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>time_elapse_min</attributeName>
+          <attributeDefinition>Time elapse since flume run started</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>minute</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">16</minimum>
+                  <maximum exclusive="false">251</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hei_cm</attributeName>
+          <attributeDefinition>Plant height measured in cm</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">7</minimum>
+                  <maximum exclusive="false">93</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>leaf_num</attributeName>
+          <attributeDefinition>Leaf number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">206</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Value not recorded or not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>dia_mm</attributeName>
+          <attributeDefinition>Diameter at the root crown</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">15.6</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_length_cm</attributeName>
+          <attributeDefinition>Maximum root length</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">5</minimum>
+                  <maximum exclusive="false">68</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>above_g</attributeName>
+          <attributeDefinition>The dry weight for aboveground part of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.11</minimum>
+                  <maximum exclusive="false">62.26</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>below_g</attributeName>
+          <attributeDefinition>The dry weight for belowground part of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.06</minimum>
+                  <maximum exclusive="false">38.02</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sed_diff_cm</attributeName>
+          <attributeDefinition>The sediment surface change between pre and post run</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.579833</minimum>
+                  <maximum exclusive="false">22.098162</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Value not recorded or not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>481</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Plant morphology measurements</entityName>
+      <entityDescription>Plant morphological traits measured on a subset of seedlings (n = 90).</entityDescription>
+      <physical>
+        <objectName>Plant_morphology_measurements.csv</objectName>
+        <size unit="bytes">7380</size>
+        <authentication method="MD5">2089300b4c2ed80792404796c38ef97d</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/Plant_morphology_measurements.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>plant_id</attributeName>
+          <attributeDefinition>Plant ID</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Plant ID</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeDefinition>Species, either cottonwood or tamarisk</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>cw</code>
+                    <definition>cottonwoode</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>tm</code>
+                    <definition>tamarisk</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>hei_cm</attributeName>
+          <attributeDefinition>Plant height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">9</minimum>
+                  <maximum exclusive="false">130</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>leaf_num</attributeName>
+          <attributeDefinition>Leaf number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">11</minimum>
+                  <maximum exclusive="false">304</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dia_mm</attributeName>
+          <attributeDefinition>Diameter at the root crown</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.1</minimum>
+                  <maximum exclusive="false">20.7</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>bend_fce_g</attributeName>
+          <attributeDefinition>Force taken to bend the steam at 45 degree angle</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">2</minimum>
+                  <maximum exclusive="false">740</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>rooting_dep_cm</attributeName>
+          <attributeDefinition>Maximum rooting depth of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">9</minimum>
+                  <maximum exclusive="false">26</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_len_cm</attributeName>
+          <attributeDefinition>Maximum root length</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">12</minimum>
+                  <maximum exclusive="false">89</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_dia_5_cm</attributeName>
+          <attributeDefinition>Root diameter at 5 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.02</minimum>
+                  <maximum exclusive="false">12.5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_dia_15_cm</attributeName>
+          <attributeDefinition>Root diameter at 15 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.02</minimum>
+                  <maximum exclusive="false">5.2</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_dia_25_cm</attributeName>
+          <attributeDefinition>Root diameter at 25 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.2</minimum>
+                  <maximum exclusive="false">3.2</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_5_g</attributeName>
+          <attributeDefinition>Root dry weight between 0 to 5 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.02</minimum>
+                  <maximum exclusive="false">17.39</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_10_g</attributeName>
+          <attributeDefinition>Root dry weight between 5 to 10 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.01</minimum>
+                  <maximum exclusive="false">17.07</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_15_g</attributeName>
+          <attributeDefinition>Root dry weight between 10 to 15 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.01</minimum>
+                  <maximum exclusive="false">6.1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_20_g</attributeName>
+          <attributeDefinition>Root dry weight between 15 to 20 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.01</minimum>
+                  <maximum exclusive="false">4.03</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>root_wt_25_g</attributeName>
+          <attributeDefinition>Root dry weight between 20 to 25 cm below the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.01</minimum>
+                  <maximum exclusive="false">2.53</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>aboveground_g</attributeName>
+          <attributeDefinition>The dry weight for aboveground part of the plant</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.1</minimum>
+                  <maximum exclusive="false">74.6</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>total_frontal_area_cm2</attributeName>
+          <attributeDefinition>Total area of the plant, both aboveground and belowground, that perpendicular to the flow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>squareCentimeters</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">12.9125</minimum>
+                  <maximum exclusive="false">1535.9505</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>90</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Plant frontal area measurements</entityName>
+      <entityDescription>Frontal area measurements on a subset of seedlings (n = 90).</entityDescription>
+      <physical>
+        <objectName>Plant_frontal_area_measurements.csv</objectName>
+        <size unit="bytes">164581</size>
+        <authentication method="MD5">d8e60b9f3270ff1a9bc6d339b0a2ce7c</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/Plant_frontal_area_measurements.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>plantid</attributeName>
+          <attributeDefinition>Plant ID</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Plant ID</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>plant_verticle_location</attributeName>
+          <attributeDefinition>The location of the frontal area was measured, at 10 mm intervel, 0 value is the soil surface</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+                <bounds>
+                  <minimum exclusive="false">-325</minimum>
+                  <maximum exclusive="false">1185</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>frontal_area_cm2</attributeName>
+          <attributeDefinition>Frontal area of the plant at every 1 centimeter increment on plant height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>squareCentimeters</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">33.11</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>13680</numberOfRecords>
+    </dataTable>
+    <otherEntity>
+      <entityName>project R code</entityName>
+      <entityDescription>project xml generation code</entityDescription>
+      <physical>
+        <objectName>analysis.R</objectName>
+        <size unit="bytes">40</size>
+        <authentication method="MD5">3bf075978ceb26846602277d54ba18c2</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>unknown</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/analysis.R</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>unknown</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="meter" name="meter" parentSI="" unitType="length">
+          <description>SI unit of length</description>
+        </unit>
+        <unit id="minute" name="minute" parentSI="second" unitType="">
+          <description>60 seconds</description>
+        </unit>
+        <unit id="centimeter" name="centimeter" parentSI="meter" unitType="">
+          <description>.01 meters</description>
+        </unit>
+        <unit id="number" name="number" parentSI="" unitType="dimensionless">
+          <description>a number</description>
+        </unit>
+        <unit id="millimeter" name="millimeter" parentSI="meter" unitType="">
+          <description>.001 meters</description>
+        </unit>
+        <unit id="gram" name="gram" parentSI="kilogram" unitType="mass">
+          <description>0.001 kg</description>
+        </unit>
+        <unit id="squareCentimeters" name="squareCentimeters" parentSI="squareMeter" unitType="area">
+          <description>square centimeters</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

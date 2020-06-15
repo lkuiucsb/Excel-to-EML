@@ -1,33 +1,54 @@
-# Excel-to-EML
+# Read me for EDI_data_packets
+   
+## Date created (YYYYMMDD) | Date Modified (YYYYMMDD)
 
-This is a tool constructed in R for reading metadata from excel file and create an EML document for ecological data archive. 
+20191008 | 20200603
 
-## Instructions
+## Summary
 
-The R code reads the metabase in excel format, uses EML package in R, and generates an EML file in xml format. Because the R functions navigate among different files based on their relative locations, the name and location of the folder should not be changed (unless you also want to make changes on the file paths in the R functions). 
+This is short documentation describing how to use R programming language to create an EML document from an Excel metadata workbook (".xlsx") for the ecological data archive. The "R" script reads the metadata Excel workbook, and generates an EML file in ".xml" format. 
 
-#### Several preparation steps to make sure the code could run smoothly:
+This EDI data packet generation script requires these packages installed with the latest version: 1) EMLassemblyline, 2) XML 3) readxl and 4) dplyr. 
 
-1. Install all the library needed (listed in the batch_xml.R file)
+Ecological Metadata Language (EML) standards and specification can be seen: https://knb.ecoinformatics.org/external//emlparser/docs/index.html 
 
-2. The IntellectualRights.docs document has the CC-BY license. If you prefer any other licence, please replace all the content in this document. 
+## List of files included in the EML generation process
 
-3. In the boilerplat.xml document, search for "person_name" (in the access childnote), and replace it with your registered name in EDI. In addition, fill in all the contact info for the organization and publisher. These contents are for the organization, not a personal contact. Generally, you only need to fill in this information once and never need to change. If you need to frequently change the organization contact and publisher, you might want to put it into the R functions to automate this info in your EML. 
+   1.EML_generation
+   
+    All functions stored in EML_funs
+    
+   2.Metadata - Metadata Excel workbook, and its instruction
+    
+   3.project.99 and project.100 as examples
 
-4. Project.99 and project.1001 are examples of showing you how you can fill in the metadata excel file. For adding a new dataset, you generally only need to fill in the first 9 sheets, from left to right. The 6 sheets at the end are for vocabulary controls. Thus, if you have question about what you can put into some of the columns, refer to these 6 sheets.  
+## File descriptions
 
-5. In any of the project folder (your dataset folder), we have to have Abstract.** (dataset ID), Method.**, the dataset(s) you want to archive, and a R code called project.**
+### EML_generation
 
-6. Run the R code in the project folder, from top to bottom, you should be able to generate a good EML document. Note, change the datsetid, and be cleared about how many entities in your dataset package. One-table data package can be refered to an example in project.1001 and any data package had more than one data tables (or any non-tabular file) can be refered to example in project.999.
+**EML_generation** stores the main "R" functions and template information for the creation of the ".xml" file. The functions in the "R" script and codes navigate among different files based on their relative locations, the name and location of the folder should not be changed (unless you also want to make changes on the file paths for all "R" functions used). 
 
-7. It is always nice to open your EML in Oxygen to double check if things look right before uploading to EDI. 
+### Metadata
 
-#### To create an EML for a new dataset, follow steps below: 
+For adding a new dataset in the Excel workbook, you need to fill in the first 7 sheets, from left to right. The 4 sheets at the end are lists of peoples (may need to update once a while if you have new personnel) and for vocabulary controls. Refer to the "Metadata_Readme.md" for a detailed guide on each sheet of the "Metadata.xlsx".
 
-a. assign a project ID for a in-coming data, and create a folder called "project.**". 
+### project folder
 
-b. In the "project.**" folder, paste in all the data tables (or other data related files); create an abstract and method document; paste in "project.**.R" file. 
+For a new dataset, create its won project folder called "project.XXX" ("XXXX" = dataset ID). Here, the project.99 is a vegetation dislodgment data package as an example.
 
-c. Open the Metadata.xlsx file and fill in all the meta data. 
+In the project folder, we have to have "abstract.docx", "methods.docx", the dataset(s) you want to archive, and an "R" script called "project.XXXX.R" ("XXXX" = dataset ID). 
 
-d. run project.**.R file. Then you should have a EML file called "XML_**.xml" in your project folder.  
+Make sure the "abstract.docx" document is the abstract for the data instead of the abstract for article publications. If the dataset has a protocol, include a URL within the methods document. 
+
+As of today, 06/15/2020, the abstract and methods document can't handle bold and hyperlink. Make sure to remove those before generating the EML. Otherwise your EML will be invalid. 
+
+## Run R code
+Once you have all the metadata information filled out and all the relevant files placed in the project folder, run the "project.XXXX.R" in the project folder, from top to bottom to generate your EML document. The script will generate error messages if any part of the validation fails while "R" would also provide additional "warnings()" and additional messages should it arise when executing the functions.
+
+## Additional information
+
+The R code and functions here are built on top of the **EMLassemblyline**. So if you update the EMLassemblyline package with the major revision, the code could break. See the GitHub repo: https://github.com/EDIorg/EMLassemblyline.
+
+The R codes currently accommodate the CC-By license, if you want to use other data publication license, you want to modify the R function "generate_EML_Assemblyline" around L123 to choose other licenses or read in a special license that in a Word document. 
+  
+If you manage more than 50 datasets, another similar tool I want to recommend is the **Core-metabase**. This is the tool developed using PostgresSQL which has great benefits from additional controls and tables (vocabulary controls or extra tables for long-term data management purposes). The core-metabase means to manage a large number of datasets. The installation code for the LTER-core-metabase is here: https://github.com/lter/LTER-core-metabase. An R package has developed parallel to the LTER-core-metabase for generating EML: https://github.com/BLE-LTER/MetaEgress.
