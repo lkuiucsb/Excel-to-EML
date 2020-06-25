@@ -24,7 +24,7 @@ eal_inputs$data.path = eal_inputs$eml.path <- project_path
 eal_inputs$maintenance.description <- 'Completed'
 eal_inputs$package.id <- excel_input$dataset$packageid
 # some packages don't have the scope 
-if (!is.na(excel_input$dataset$scope)) {eal_inputs$user.domain<-excel_input$dataset$scope}
+if (!is.na(excel_input$dataset$scope)) {eal_inputs$user.domain<-excel_input$dataset$scope} else {eal_inputs$user.domain <-"scope"}
 eal_inputs$user.id <- excel_input$dataset$userid
 
 
