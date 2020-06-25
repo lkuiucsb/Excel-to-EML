@@ -47,7 +47,7 @@ The first step to starting your archive. Enter data packet information in this s
 
 "filetype": specific file type for the dataset. Refer to the "FileTypeList" for possible file types and notes.
 
-"urlpath": url location for the dataset if they have another copy stored somewhere else.
+"urlpath": url for the dataset if you have another copy stored somewhere else. If not, leave this cell blank. Within one dataset, at this point, we accept cases that all entities have the urls or none eneity has the url. 
 
 "filename": full file names for the dataset(s) to be archived.
 

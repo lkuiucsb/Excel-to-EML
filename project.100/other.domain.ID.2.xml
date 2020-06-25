@@ -22,7 +22,7 @@
       <electronicMailAddress>placeholder@msi.ucsb.edu</electronicMailAddress>
       <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
     </creator>
-    <pubDate>2020-06-15</pubDate>
+    <pubDate>2020-06-25</pubDate>
     <abstract>
       <para>
   This is abstract
@@ -125,11 +125,6 @@
             </simpleDelimited>
           </textFormat>
         </dataFormat>
-        <distribution>
-          <online>
-            <url>http://aaa/Giant_Kelp.csv</url>
-          </online>
-        </distribution>
       </physical>
       <attributeList>
         <attribute>
@@ -211,6 +206,21 @@
       </attributeList>
       <numberOfRecords>20550</numberOfRecords>
     </dataTable>
+    <otherEntity>
+      <entityName>pdf</entityName>
+      <entityDescription>PDF method description</entityDescription>
+      <physical>
+        <objectName>pdf_method.pdf</objectName>
+        <size unit="bytes">15948</size>
+        <authentication method="MD5">3aca1d45f0102a75f60f20c411172a14</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>Adobe Portable Document Format</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+      </physical>
+      <entityType>PDF</entityType>
+    </otherEntity>
   </dataset>
   <additionalMetadata>
     <metadata>

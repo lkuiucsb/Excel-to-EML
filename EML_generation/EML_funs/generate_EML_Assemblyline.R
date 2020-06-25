@@ -23,9 +23,11 @@ eal_inputs$dataset.title <- excel_input$dataset$title
 eal_inputs$data.path = eal_inputs$eml.path <- project_path
 eal_inputs$maintenance.description <- 'Completed'
 eal_inputs$package.id <- excel_input$dataset$packageid
-eal_inputs$user.domain <- excel_input$dataset$scope
+# some packages don't have the scope 
+if (!is.na(excel_input$dataset$scope)) {eal_inputs$user.domain<-excel_input$dataset$scope}
 eal_inputs$user.id <- excel_input$dataset$userid
-eal_inputs$write.file <-T
+
+
 
 #data table
 if (datatable_present==1){
@@ -33,14 +35,14 @@ if (datatable_present==1){
   eal_inputs$data.table.name <- entity[entity$entitytype=="dataTable","entityname"]
   eal_inputs$data.table.description <- entity[entity$entitytype=="dataTable","entitydescription"]
   eal_inputs$data.table.quote.character  <- entity[entity$entitytype=="dataTable","quotecharacter"]
-  eal_inputs$data.table.url <- entity[entity$entitytype=="dataTable","dataTableUrl"]
+  if (!is.na(entity[entity$entitytype=="dataTable","dataTableUrl"][1])) {eal_inputs$data.table.url <- entity[entity$entitytype=="dataTable","dataTableUrl"]}
 
   entities_order <- excel_input$entities$entity_position
   
   for (i in entities_order) {
     f <- paste0(
       "attributes_",
-      tools::file_path_sans_ext(excel_input$entities$filename[i]),
+      tools::file_path_sans_ext(excel_input$entities$filename[excel_input$entities$entity_position==i]),
       ".txt")
     
     attribute <- excel_input$attributes[excel_input$attributes$entity_position==i,]
@@ -56,16 +58,15 @@ if (datatable_present==1){
       stringsAsFactors = F)
   }
   
-  
   # categorical data
   if (nrow(excel_input$factors)>0) {
-  for (i in entities_order) {
+  for (j in entities_order) {
     f <- paste0(
       "catvars_",
-      tools::file_path_sans_ext(excel_input$entities$filename[i]),
+      tools::file_path_sans_ext(excel_input$entities$filename[excel_input$entities$entity_position==j]),
       ".txt")
     
-    category <- excel_input$factors[excel_input$factors$entity_position==i,]
+    category <- excel_input$factors[excel_input$factors$entity_position==j,]
     
     eal_inputs$x$template[[f]]$content <- data.frame(
       attributeName = as.character(category$attributeName),
@@ -74,7 +75,6 @@ if (datatable_present==1){
       stringsAsFactors = F)
     }
   }
-  
   
   #customize unit
   if (nrow(excel_input$unit)>0) {
@@ -94,9 +94,8 @@ if (otherentity_present==1){
   eal_inputs$other.entity <- entity[entity$entitytype=="otherEntity","filename"]
   eal_inputs$other.entity.name <- entity[entity$entitytype=="otherEntity","entityname"]
   eal_inputs$other.entity.description <- entity[entity$entitytype=="otherEntity","entitydescription"]
-  eal_inputs$other.entity.url <- entity[entity$entitytype=="otherEntity","dataTableUrl"]
+  if (!is.na(entity[entity$entitytype=="otherEntity","dataTableUrl"][1])) {eal_inputs$other.entity.url <-entity[entity$entitytype=="otherEntity","dataTableUrl"]}
 }
-
 
 # geography
 eal_inputs$x$template$geographic_coverage.txt$content <- data.frame(
@@ -149,6 +148,29 @@ eal_inputs$x$template$personnel.txt$content <- data.frame(
   fundingNumber = as.character(excel_input$creator$fundingNumber),
   stringsAsFactors = F)
 
-return(eal_inputs)
+
+# #this section is added here because EMLAssemblyline has not been able to accommondate this at this point. 
+# # once the package get improved, we will modify this section
+eal_inputs$return.obj=T
+eal_inputs$write.file <-F
+
+if (otherentity_present==1) {
+
+  erl_input_modify <-do.call(make_eml, eal_inputs[names(eal_inputs) %in% names(formals(make_eml))])
+
+en_num <- nrow(entity[entity$entitytype=="otherEntity",])
+
+  for (et in 1:en_num) {
+
+    en_name <- erl_input_modify$dataset$otherEntity[[et]]$physical$objectName
+
+    erl_input_modify$dataset$otherEntity[[et]]$physical$dataFormat$externallyDefinedFormat$formatName <-entity[entity$entitytype=="otherEntity"&entity$filename==en_name,"formatname"]
+    erl_input_modify$dataset$otherEntity[[et]]$entityType <-entity[entity$entitytype=="otherEntity"&entity$filename==en_name,"typename"]
+  }
+} else {
+erl_input_modify <-do.call(make_eml, eal_inputs[names(eal_inputs) %in% names(formals(make_eml))])
+}
+
+return(erl_input_modify)
 
 }

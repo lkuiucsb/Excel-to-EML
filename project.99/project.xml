@@ -31,13 +31,14 @@
       <electronicMailAddress>placeholder@esf.edu</electronicMailAddress>
       <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
     </creator>
-    <pubDate>2020-06-25</pubDate>
+    <pubDate>2020-06-15</pubDate>
     <abstract>
+      <para>Abstract</para>
       <para>
-  Try different formatting here: 1. Subscript
-  CO<subscript>2</subscript>. 2. <emphasis>Scientific name</emphasis> 3.
-  email: lkui@ucsb.edu
-</para>
+    Try some wired things here: 1. Subscript CO<subscript>2</subscript>.
+    2. <emphasis>Scientific name</emphasis> 3. with hyperlink Link:
+    lkui@ucsb.edu
+  </para>
     </abstract>
     <keywordSet>
       <keyword>BasisofRecord: HumanObservation</keyword>
@@ -130,61 +131,68 @@
     <methods>
       <methodStep>
         <description>
-          <para>1. Experimental setup and plant propagation</para>
           <para>
-    To acquire plants for our experiments, we collected live cottonwood
-    and tamarisk seedlings (including <emphasis>T.
-    ramosissima</emphasis> Ledebour<emphasis>, T. chinensis</emphasis>
-    Loureiro, and <emphasis>T. parviflora</emphasis>) from the Bill
-    Williams River (AZ), Virgin River (NV) and San Joaquin River basins
-    in March 2013. Plants were greenhouse-healed for two months in
-    vermiculite, and then shipped as bare-root plants to the RFS.
-  </para>
-          <para>2. Plant morphological traits</para>
+  1. Experimental setup and plant propagation
+</para>
           <para>
-    We used a random subsample of 90 plants (47 cottonwood and 43
-    tamarisk) to quantify differences in morphological traits between
-    species. At the end of the transplant and growth period, plants were
-    carefully removed from their pots and rinsed of sand.
-  </para>
-          <para>3. Flood experiment design</para>
+  To acquire plants for our experiments, we collected live cottonwood
+  and tamarisk seedlings (including <emphasis>T. ramosissima</emphasis>
+  Ledebour<emphasis>, T. chinensis</emphasis> Loureiro, and <emphasis>T.
+  parviflora</emphasis>) from the Bill Williams River (AZ), Virgin River
+  (NV) and San Joaquin River basins in March 2013. Plants were
+  greenhouse-healed for two months in vermiculite, and then shipped as
+  bare-root plants to the RFS.
+</para>
           <para>
-    We conducted 10 flume runs that differed with respect to species,
-    plant size, and density. Individual plants were tested in five of
-    the trials, in which 4–5 plants were installed ca. 3 m apart within
-    a 12-m long test section.
-  </para>
-          <para>References: </para>
+  2. Plant morphological traits
+</para>
           <para>
-    Bywater-Reyes S., Wilcox A.C., Stella J.C. &amp; Lightbody A.F.
-    (2015) Flow and scour constraints on uprooting of pioneer woody
-    seedlings. <emphasis>Water Resource Research,</emphasis> 51,
-    9190-9206.Edmaier K., Crouzy B. &amp; Perona P. (2015) Experimental
-    characterization of vegetation uprooting by flow. <emphasis>Journal
-    of Geophysical Research: Biogeosciences,</emphasis> 120,
-    2169-8953.Khuder H., Stokes A., Danjon F., Gouskou K. &amp; Lagane
-    F. (2007) Is it possible to manipulate root anchorage in young
-    trees? <emphasis>Plant and Soil,</emphasis> 294, 87-102.Kondolf G.M.
-    (1997) Hungry water: Effects of dams and gravel mining on river
-    channels. <emphasis>Environmental Management,</emphasis> 21,
-    533-551.Kui L., Stella J.C., Lightbody A.F. &amp; Wilcox A.C. (2014)
-    Ecogeomorphic feedbacks and flood loss of riparian tree seedlings in
-    meandering channel experiments. <emphasis>Water Resource
-    Research</emphasis>.Manners R., Wilcox A.C., Kui L., Lightbody A.F.,
-    Stella J. &amp; Sklar L.S. (2015) When do plants modify fluvial
-    processes? Plant-hydraulic interactions under variable flow and
-    sediment supply rates. <emphasis>Journal of Geophysical Research -
-    Earth Surface,</emphasis> 120, 325-345.Rominger J.T., Lightbody A.F.
-    &amp; Nepf H.M. (2010) Effects of added vegetation on sand bar
-    stability and stream hydrodynamics. <emphasis>Journal of Hydraulic
-    Engineering-Asce,</emphasis> 136, 994-1002.Scott M.L., Shafroth P.B.
-    &amp; Auble G.T. (1999) Responses of riparian cottonwoods to
-    alluvial water table declines. <emphasis>Environmental
-    Management,</emphasis> 23, 347-358.Taylor J.P., Wester D.B. &amp;
-    Smith L.M. (1999) Soil disturbance, flood management, and riparian
-    woody plant establishment in the Rio Grande floodplain.
-    <emphasis>Wetlands,</emphasis> 19, 372-382.
-  </para>
+  We used a random subsample of 90 plants (47 cottonwood and 43
+  tamarisk) to quantify differences in morphological traits between
+  species. At the end of the transplant and growth period, plants were
+  carefully removed from their pots and rinsed of sand.
+</para>
+          <para>
+  3. Flood experiment design
+</para>
+          <para>
+  We conducted 10 flume runs that differed with respect to species,
+  plant size, and density. Individual plants were tested in five of the
+  trials, in which 4–5 plants were installed ca. 3 m apart within a 12-m
+  long test section.
+</para>
+          <para>
+  References:
+</para>
+          <para>
+  Bywater-Reyes S., Wilcox A.C., Stella J.C. &amp; Lightbody A.F. (2015)
+  Flow and scour constraints on uprooting of pioneer woody seedlings.
+  <emphasis>Water Resource Research,</emphasis> 51, 9190-9206.Edmaier
+  K., Crouzy B. &amp; Perona P. (2015) Experimental characterization of
+  vegetation uprooting by flow. <emphasis>Journal of Geophysical
+  Research: Biogeosciences,</emphasis> 120, 2169-8953.Khuder H., Stokes
+  A., Danjon F., Gouskou K. &amp; Lagane F. (2007) Is it possible to
+  manipulate root anchorage in young trees? <emphasis>Plant and
+  Soil,</emphasis> 294, 87-102.Kondolf G.M. (1997) Hungry water: Effects
+  of dams and gravel mining on river channels. <emphasis>Environmental
+  Management,</emphasis> 21, 533-551.Kui L., Stella J.C., Lightbody A.F.
+  &amp; Wilcox A.C. (2014) Ecogeomorphic feedbacks and flood loss of
+  riparian tree seedlings in meandering channel experiments.
+  <emphasis>Water Resource Research</emphasis>.Manners R., Wilcox A.C.,
+  Kui L., Lightbody A.F., Stella J. &amp; Sklar L.S. (2015) When do
+  plants modify fluvial processes? Plant-hydraulic interactions under
+  variable flow and sediment supply rates. <emphasis>Journal of
+  Geophysical Research - Earth Surface,</emphasis> 120, 325-345.Rominger
+  J.T., Lightbody A.F. &amp; Nepf H.M. (2010) Effects of added
+  vegetation on sand bar stability and stream hydrodynamics.
+  <emphasis>Journal of Hydraulic Engineering-Asce,</emphasis> 136,
+  994-1002.Scott M.L., Shafroth P.B. &amp; Auble G.T. (1999) Responses
+  of riparian cottonwoods to alluvial water table declines.
+  <emphasis>Environmental Management,</emphasis> 23, 347-358.Taylor
+  J.P., Wester D.B. &amp; Smith L.M. (1999) Soil disturbance, flood
+  management, and riparian woody plant establishment in the Rio Grande
+  floodplain. <emphasis>Wetlands,</emphasis> 19, 372-382.
+</para>
         </description>
       </methodStep>
     </methods>
@@ -923,14 +931,14 @@
     </dataTable>
     <otherEntity>
       <entityName>project R code</entityName>
-      <entityDescription>a R code used in the project</entityDescription>
+      <entityDescription>project xml generation code</entityDescription>
       <physical>
         <objectName>analysis.R</objectName>
         <size unit="bytes">40</size>
         <authentication method="MD5">3bf075978ceb26846602277d54ba18c2</authentication>
         <dataFormat>
           <externallyDefinedFormat>
-            <formatName>R program code</formatName>
+            <formatName>unknown</formatName>
           </externallyDefinedFormat>
         </dataFormat>
         <distribution>
@@ -939,27 +947,7 @@
           </online>
         </distribution>
       </physical>
-      <entityType>R program code</entityType>
-    </otherEntity>
-    <otherEntity>
-      <entityName>project xml</entityName>
-      <entityDescription>a fake xml document for the project</entityDescription>
-      <physical>
-        <objectName>project.xml</objectName>
-        <size unit="bytes">38739</size>
-        <authentication method="MD5">0bb97f682307ec526cc3a653618b83de</authentication>
-        <dataFormat>
-          <externallyDefinedFormat>
-            <formatName>XML document</formatName>
-          </externallyDefinedFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url>http://aaa/project.xml</url>
-          </online>
-        </distribution>
-      </physical>
-      <entityType>XML</entityType>
+      <entityType>unknown</entityType>
     </otherEntity>
   </dataset>
   <additionalMetadata>

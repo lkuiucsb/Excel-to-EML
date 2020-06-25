@@ -49,7 +49,7 @@ filetype <- as.data.frame(read_xlsx  (wb, sheet = "ListFileType", na=""))
 
 entities <-as.data.frame(read_xlsx  (wb, sheet = "DataSetEntities", na=""))%>%
   left_join(filetype, by="filetype") %>%
-  mutate(dataTableUrl=paste0(urlpath,filename))%>%
+  mutate(dataTableUrl=ifelse(!is.na(urlpath),paste0(urlpath,filename),NA))%>%
   filter(datasetid==dataset_id)
 
 geo <- as.data.frame(read_xlsx  (wb, sheet = "DataSetSites", na="")) %>%

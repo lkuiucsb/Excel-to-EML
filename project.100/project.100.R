@@ -28,5 +28,5 @@ eml_in_template <- generate_EML_Assemblyline(project_path= paste0(folder_path,"p
                                              dataset_id_input=dataset_id)
 
 # Export EML --------------------------------------------------------------------
-do.call(make_eml, eml_in_template[names(eml_in_template) %in% names(formals(make_eml))])
+EML::write_eml(eml_in_template, paste0(folder_path,"project.",dataset_id,"/", metadata$dataset$packageid, ".xml"))
 
