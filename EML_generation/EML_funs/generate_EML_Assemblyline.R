@@ -28,7 +28,6 @@ if (!is.na(excel_input$dataset$scope)) {eal_inputs$user.domain<-excel_input$data
 eal_inputs$user.id <- excel_input$dataset$userid
 
 
-
 #data table
 if (datatable_present==1){
   eal_inputs$data.table <- entity[entity$entitytype=="dataTable","filename"]
@@ -37,7 +36,7 @@ if (datatable_present==1){
   eal_inputs$data.table.quote.character  <- entity[entity$entitytype=="dataTable","quotecharacter"]
   if (!is.na(entity[entity$entitytype=="dataTable","dataTableUrl"][1])) {eal_inputs$data.table.url <- entity[entity$entitytype=="dataTable","dataTableUrl"]}
 
-  entities_order <- excel_input$entities$entity_position
+  entities_order <- excel_input$entities$entity_position[excel_input$entities$entitytype=="dataTable"]
   
   for (i in entities_order) {
     f <- paste0(

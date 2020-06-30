@@ -11,13 +11,14 @@ library(dplyr)
 #change the following number based on each of the datasets
 dataset_id=100
 
-folder_path<- "/Users/lkui/Desktop/Excel_to_EML_Assembly/"
+folder_path<- "/Users/lkui/Documents/GitHub/Excel-to-EML/"
 #end user edit zone###########
 
 ######################################
 #loading all the functions
 source(paste0(folder_path,'EML_generation/EML_funs/get_meta_xlsx.R'))
 source(paste0(folder_path,'EML_generation/EML_funs/generate_EML_Assemblyline.R'))
+source(paste0(folder_path,'EML_generation/EML_funs/write_eml_excel.R'))
 
 #read the metadata content out of xlsx
 metadata <- get_meta_xlsx(folder_path=folder_path,dataset_id=dataset_id)
@@ -28,5 +29,5 @@ eml_in_template <- generate_EML_Assemblyline(project_path= paste0(folder_path,"p
                                              dataset_id_input=dataset_id)
 
 # Export EML --------------------------------------------------------------------
-EML::write_eml(eml_in_template, paste0(folder_path,"project.",dataset_id,"/", metadata$dataset$packageid, ".xml"))
+write_eml_excel(eml_in_template, paste0(folder_path,"project.",dataset_id,"/", metadata$dataset$packageid, ".xml"))
 
