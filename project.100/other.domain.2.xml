@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="other.domain.ID.2" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="edi">
-  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
-    <allow>
-      <principal>stellalab</principal>
-      <permission>all</permission>
-    </allow>
-    <allow>
-      <principal>public</principal>
-      <permission>read</permission>
-    </allow>
-  </access>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="other.domain.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="knb">
   <dataset>
     <title>giant kelp</title>
     <creator>
@@ -22,10 +12,10 @@
       <electronicMailAddress>placeholder@msi.ucsb.edu</electronicMailAddress>
       <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
     </creator>
-    <pubDate>2020-06-25</pubDate>
+    <pubDate>2020-07-28</pubDate>
     <abstract>
       <para>
-  This is abstract
+  This is a place for abstract
 </para>
     </abstract>
     <keywordSet>
@@ -34,26 +24,21 @@
     </keywordSet>
     <intellectualRights>
       <para>
-  This information is released under the Creative Commons license -
-  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
-  The consumer of these data ("Data User" herein) is required
-  to cite it appropriately in any publication that results from its use.
-  The Data User should realize that these data may be actively used by
-  others for ongoing research and that coordination may be necessary to
-  prevent duplicate publication. The Data User is urged to contact the
-  authors of these data if any questions about methodology or results
-  occur. Where appropriate, the Data User is encouraged to consider
-  collaboration or co-authorship with the authors. The Data User should
-  realize that misinterpretation of data may occur if used out of
-  context of the original study. While substantial efforts are made to
-  ensure the accuracy of data and associated documentation, complete
-  accuracy of data sets cannot be guaranteed. All data are made
-  available "as is." The Data User should be aware, however,
-  that data are updated periodically and it is the responsibility of the
-  Data User to check for new versions of the data. The data authors and
-  the repository where these data were obtained shall not be liable for
-  damages resulting from any use or misinterpretation of the data. Thank
-  you.
+  This data package is released to the "public domain" under
+  Creative Commons CC0 1.0 "No Rights Reserved" (see:
+  https://creativecommons.org/publicdomain/zero/1.0/). It is considered
+  professional etiquette to provide attribution of the original work if
+  this data package is shared in whole or by individual components. A
+  generic citation is provided for this data package on the website
+  https://portal.edirepository.org (herein "website") in the
+  summary metadata page. Communication (and collaboration) with the
+  creators of this data package is recommended to prevent duplicate
+  research or publication. This data package (and its components) is
+  made available "as is" and with no warranty of accuracy or
+  fitness for use. The creators of this data package and the website
+  shall not be liable for any damages resulting from misinterpretation
+  or misuse of the data package or its components. Periodic updates of
+  this data package may be available from the website. Thank you.
 </para>
     </intellectualRights>
     <coverage>
@@ -72,13 +57,13 @@
             <calendarDate>2008-01-01</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2020-01-01</calendarDate>
+            <calendarDate>2018-02-28</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
     </coverage>
     <maintenance>
-      <description>Completed</description>
+      <description>Ongoing collection with update quarterly</description>
     </maintenance>
     <contact>
       <organizationName>SBC MBON</organizationName>
@@ -88,25 +73,24 @@
       <methodStep>
         <description>
           <para>
-  This is method.
+  This is a place for method.
 </para>
         </description>
       </methodStep>
     </methods>
     <project>
-      <title>PISCO</title>
+      <title>PISCO funding</title>
       <personnel>
         <individualName>
-          <givenName>Robert</givenName>
-          <givenName>J</givenName>
-          <surName>Miller</surName>
+          <givenName>Li</givenName>
+          <surName>Kui</surName>
         </individualName>
         <organizationName>UCSB</organizationName>
-        <electronicMailAddress>placeholder@msi.ucsb.edu</electronicMailAddress>
+        <electronicMailAddress>lkui@ucsb.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
         <role>Principal Investigator</role>
       </personnel>
-      <funding>NSF0000</funding>
+      <funding>NSF0000000</funding>
     </project>
     <dataTable>
       <entityName>Giant kelp</entityName>
@@ -122,6 +106,7 @@
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
             </simpleDelimited>
           </textFormat>
         </dataFormat>
@@ -215,11 +200,16 @@
         <authentication method="MD5">3aca1d45f0102a75f60f20c411172a14</authentication>
         <dataFormat>
           <externallyDefinedFormat>
-            <formatName>Adobe Portable Document Format</formatName>
+            <formatName>application/pdf</formatName>
           </externallyDefinedFormat>
         </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/pdf_method.pdf</url>
+          </online>
+        </distribution>
       </physical>
-      <entityType>PDF</entityType>
+      <entityType>unknown</entityType>
     </otherEntity>
   </dataset>
   <additionalMetadata>

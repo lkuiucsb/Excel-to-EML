@@ -8,7 +8,7 @@ wb= meta_path = paste0(folder_path,"Metadata/Metadata.xlsx")
 boilerplate <-  as.data.frame(read_xlsx (wb, sheet = "Boilerplate", na="") )
   
 dataset <- as.data.frame(read_xlsx (wb, sheet = "DataSet",na="")) %>%
-  mutate(packageid=paste0(alternatedid,".",version),
+  mutate(packageid=ifelse(!is.na(alternatedid),paste0(alternatedid,".",version),NA),
          temporal_begindate=as.character(temporal_begindate),
          temporal_enddate=as.character(temporal_enddate)) %>%
   filter(datasetid==dataset_id) %>%
@@ -40,7 +40,8 @@ creator <-dataset %>%
   rename(peopleid=project_PI,projectTitle=project_funding_title,fundingNumber=project_funding_code) %>%
   mutate(authorshiprole="PI") %>%
   bind_rows(creator_raw) %>%
-  left_join(people,by="peopleid")
+  filter(!is.na(peopleid)) %>%
+  left_join(people,by="peopleid") 
   
 keyword <- as.data.frame(read_xlsx  (wb, sheet = "DataSetKeywords", na=""))%>%
   filter(datasetid==dataset_id)
@@ -64,8 +65,7 @@ geo <- as.data.frame(read_xlsx  (wb, sheet = "DataSetSites", na="")) %>%
     keyword=keyword,
     entities=entities,
     dataset=dataset,
-    geo=geo,
-    boilerplate=boilerplate
+    geo=geo
   )
   
   
