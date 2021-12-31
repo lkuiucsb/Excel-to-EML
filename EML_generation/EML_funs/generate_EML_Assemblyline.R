@@ -250,7 +250,7 @@ eal_inputs$x$template$personnel.txt$content <- data.frame(
   userId= as.character(excel_input$creator$orcid),
   role=as.character(excel_input$creator$authorshiprole),
   projectTitle = as.character(excel_input$creator$projectTitle),
-  fundingAgency = as.character(""),
+  fundingAgency = as.character(excel_input$creator$fundingAgency),
   fundingNumber = as.character(excel_input$creator$fundingNumber),
   stringsAsFactors = F)
 

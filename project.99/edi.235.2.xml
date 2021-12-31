@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.235.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.235.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=lkui,o=EDI,dc=edirepository,dc=org</principal>
@@ -31,13 +31,13 @@
       <electronicMailAddress>placeholder@esf.edu</electronicMailAddress>
       <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
     </creator>
-    <pubDate>2020-07-27</pubDate>
+    <pubDate>2021-12-31</pubDate>
     <abstract>
       <para>
-  Try different formatting here: 1. Subscript
-  CO<subscript>2</subscript>. 2. <emphasis>Scientific name</emphasis> 3.
-  email: lkui@ucsb.edu
-</para>
+    Try different formatting here: 1. Subscript
+    CO<subscript>2</subscript>. 2. <emphasis>Scientific name</emphasis>
+    3. email: lkui@ucsb.edu
+  </para>
     </abstract>
     <keywordSet>
       <keyword>BasisofRecord: HumanObservation</keyword>
@@ -61,27 +61,7 @@
       <keywordThesaurus>none</keywordThesaurus>
     </keywordSet>
     <intellectualRights>
-      <para>
-  This information is released under the Creative Commons license -
-  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
-  The consumer of these data ("Data User" herein) is required
-  to cite it appropriately in any publication that results from its use.
-  The Data User should realize that these data may be actively used by
-  others for ongoing research and that coordination may be necessary to
-  prevent duplicate publication. The Data User is urged to contact the
-  authors of these data if any questions about methodology or results
-  occur. Where appropriate, the Data User is encouraged to consider
-  collaboration or co-authorship with the authors. The Data User should
-  realize that misinterpretation of data may occur if used out of
-  context of the original study. While substantial efforts are made to
-  ensure the accuracy of data and associated documentation, complete
-  accuracy of data sets cannot be guaranteed. All data are made
-  available "as is." The Data User should be aware, however,
-  that data are updated periodically and it is the responsibility of the
-  Data User to check for new versions of the data. The data authors and
-  the repository where these data were obtained shall not be liable for
-  damages resulting from any use or misinterpretation of the data. Thank
-  you.
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.
 </para>
     </intellectualRights>
     <coverage>
@@ -132,59 +112,60 @@
         <description>
           <para>1. Experimental setup and plant propagation</para>
           <para>
-    To acquire plants for our experiments, we collected live cottonwood
-    and tamarisk seedlings (including <emphasis>T.
-    ramosissima</emphasis> Ledebour<emphasis>, T. chinensis</emphasis>
-    Loureiro, and <emphasis>T. parviflora</emphasis>) from the Bill
-    Williams River (AZ), Virgin River (NV) and San Joaquin River basins
-    in March 2013. Plants were greenhouse-healed for two months in
-    vermiculite, and then shipped as bare-root plants to the RFS.
-  </para>
+      To acquire plants for our experiments, we collected live
+      cottonwood and tamarisk seedlings (including <emphasis>T.
+      ramosissima</emphasis> Ledebour<emphasis>, T. chinensis</emphasis>
+      Loureiro, and <emphasis>T. parviflora</emphasis>) from the Bill
+      Williams River (AZ), Virgin River (NV) and San Joaquin River
+      basins in March 2013. Plants were greenhouse-healed for two months
+      in vermiculite, and then shipped as bare-root plants to the RFS.
+    </para>
           <para>2. Plant morphological traits</para>
           <para>
-    We used a random subsample of 90 plants (47 cottonwood and 43
-    tamarisk) to quantify differences in morphological traits between
-    species. At the end of the transplant and growth period, plants were
-    carefully removed from their pots and rinsed of sand.
-  </para>
+      We used a random subsample of 90 plants (47 cottonwood and 43
+      tamarisk) to quantify differences in morphological traits between
+      species. At the end of the transplant and growth period, plants
+      were carefully removed from their pots and rinsed of sand.
+    </para>
           <para>3. Flood experiment design</para>
           <para>
-    We conducted 10 flume runs that differed with respect to species,
-    plant size, and density. Individual plants were tested in five of
-    the trials, in which 4–5 plants were installed ca. 3 m apart within
-    a 12-m long test section.
-  </para>
+      We conducted 10 flume runs that differed with respect to species,
+      plant size, and density. Individual plants were tested in five of
+      the trials, in which 4–5 plants were installed ca. 3 m apart
+      within a 12-m long test section.
+    </para>
           <para>References: </para>
           <para>
-    Bywater-Reyes S., Wilcox A.C., Stella J.C. &amp; Lightbody A.F.
-    (2015) Flow and scour constraints on uprooting of pioneer woody
-    seedlings. <emphasis>Water Resource Research,</emphasis> 51,
-    9190-9206.Edmaier K., Crouzy B. &amp; Perona P. (2015) Experimental
-    characterization of vegetation uprooting by flow. <emphasis>Journal
-    of Geophysical Research: Biogeosciences,</emphasis> 120,
-    2169-8953.Khuder H., Stokes A., Danjon F., Gouskou K. &amp; Lagane
-    F. (2007) Is it possible to manipulate root anchorage in young
-    trees? <emphasis>Plant and Soil,</emphasis> 294, 87-102.Kondolf G.M.
-    (1997) Hungry water: Effects of dams and gravel mining on river
-    channels. <emphasis>Environmental Management,</emphasis> 21,
-    533-551.Kui L., Stella J.C., Lightbody A.F. &amp; Wilcox A.C. (2014)
-    Ecogeomorphic feedbacks and flood loss of riparian tree seedlings in
-    meandering channel experiments. <emphasis>Water Resource
-    Research</emphasis>.Manners R., Wilcox A.C., Kui L., Lightbody A.F.,
-    Stella J. &amp; Sklar L.S. (2015) When do plants modify fluvial
-    processes? Plant-hydraulic interactions under variable flow and
-    sediment supply rates. <emphasis>Journal of Geophysical Research -
-    Earth Surface,</emphasis> 120, 325-345.Rominger J.T., Lightbody A.F.
-    &amp; Nepf H.M. (2010) Effects of added vegetation on sand bar
-    stability and stream hydrodynamics. <emphasis>Journal of Hydraulic
-    Engineering-Asce,</emphasis> 136, 994-1002.Scott M.L., Shafroth P.B.
-    &amp; Auble G.T. (1999) Responses of riparian cottonwoods to
-    alluvial water table declines. <emphasis>Environmental
-    Management,</emphasis> 23, 347-358.Taylor J.P., Wester D.B. &amp;
-    Smith L.M. (1999) Soil disturbance, flood management, and riparian
-    woody plant establishment in the Rio Grande floodplain.
-    <emphasis>Wetlands,</emphasis> 19, 372-382.
-  </para>
+      Bywater-Reyes S., Wilcox A.C., Stella J.C. &amp; Lightbody A.F.
+      (2015) Flow and scour constraints on uprooting of pioneer woody
+      seedlings. <emphasis>Water Resource Research,</emphasis> 51,
+      9190-9206.Edmaier K., Crouzy B. &amp; Perona P. (2015)
+      Experimental characterization of vegetation uprooting by flow.
+      <emphasis>Journal of Geophysical Research:
+      Biogeosciences,</emphasis> 120, 2169-8953.Khuder H., Stokes A.,
+      Danjon F., Gouskou K. &amp; Lagane F. (2007) Is it possible to
+      manipulate root anchorage in young trees? <emphasis>Plant and
+      Soil,</emphasis> 294, 87-102.Kondolf G.M. (1997) Hungry water:
+      Effects of dams and gravel mining on river channels.
+      <emphasis>Environmental Management,</emphasis> 21, 533-551.Kui L.,
+      Stella J.C., Lightbody A.F. &amp; Wilcox A.C. (2014) Ecogeomorphic
+      feedbacks and flood loss of riparian tree seedlings in meandering
+      channel experiments. <emphasis>Water Resource
+      Research</emphasis>.Manners R., Wilcox A.C., Kui L., Lightbody
+      A.F., Stella J. &amp; Sklar L.S. (2015) When do plants modify
+      fluvial processes? Plant-hydraulic interactions under variable
+      flow and sediment supply rates. <emphasis>Journal of Geophysical
+      Research - Earth Surface,</emphasis> 120, 325-345.Rominger J.T.,
+      Lightbody A.F. &amp; Nepf H.M. (2010) Effects of added vegetation
+      on sand bar stability and stream hydrodynamics. <emphasis>Journal
+      of Hydraulic Engineering-Asce,</emphasis> 136, 994-1002.Scott
+      M.L., Shafroth P.B. &amp; Auble G.T. (1999) Responses of riparian
+      cottonwoods to alluvial water table declines.
+      <emphasis>Environmental Management,</emphasis> 23, 347-358.Taylor
+      J.P., Wester D.B. &amp; Smith L.M. (1999) Soil disturbance, flood
+      management, and riparian woody plant establishment in the Rio
+      Grande floodplain. <emphasis>Wetlands,</emphasis> 19, 372-382.
+    </para>
         </description>
       </methodStep>
     </methods>
@@ -201,7 +182,7 @@
         <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
         <role>Principal Investigator</role>
       </personnel>
-      <funding>NSF1111111</funding>
+      <funding>National Science Foundation OCE1111111</funding>
     </project>
     <dataTable>
       <entityName>Plant response in flume trials</entityName>
@@ -217,6 +198,7 @@
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
             </simpleDelimited>
           </textFormat>
         </dataFormat>
@@ -490,6 +472,7 @@
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
             </simpleDelimited>
           </textFormat>
         </dataFormat>
@@ -856,6 +839,7 @@
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
             </simpleDelimited>
           </textFormat>
         </dataFormat>
@@ -975,7 +959,7 @@
           <description>.01 meters</description>
         </unit>
         <unit id="number" name="number" parentSI="" unitType="dimensionless">
-          <description>a number</description>
+          <description>a quantity or amount</description>
         </unit>
         <unit id="millimeter" name="millimeter" parentSI="meter" unitType="">
           <description>.001 meters</description>

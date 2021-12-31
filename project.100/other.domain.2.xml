@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="other.domain.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0  https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd" system="knb">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="other.domain.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
   <dataset>
-    <title>giant kelp</title>
+    <title>time series giant kelp dataset</title>
     <creator>
       <individualName>
         <givenName>Robert</givenName>
@@ -12,33 +12,18 @@
       <electronicMailAddress>placeholder@msi.ucsb.edu</electronicMailAddress>
       <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
     </creator>
-    <pubDate>2020-07-28</pubDate>
+    <pubDate>2021-12-31</pubDate>
     <abstract>
       <para>
-  This is a place for abstract
-</para>
+    This is a place for abstract
+  </para>
     </abstract>
     <keywordSet>
       <keyword>giant kelp</keyword>
       <keywordThesaurus>none</keywordThesaurus>
     </keywordSet>
     <intellectualRights>
-      <para>
-  This data package is released to the "public domain" under
-  Creative Commons CC0 1.0 "No Rights Reserved" (see:
-  https://creativecommons.org/publicdomain/zero/1.0/). It is considered
-  professional etiquette to provide attribution of the original work if
-  this data package is shared in whole or by individual components. A
-  generic citation is provided for this data package on the website
-  https://portal.edirepository.org (herein "website") in the
-  summary metadata page. Communication (and collaboration) with the
-  creators of this data package is recommended to prevent duplicate
-  research or publication. This data package (and its components) is
-  made available "as is" and with no warranty of accuracy or
-  fitness for use. The creators of this data package and the website
-  shall not be liable for any damages resulting from misinterpretation
-  or misuse of the data package or its components. Periodic updates of
-  this data package may be available from the website. Thank you.
+      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
 </para>
     </intellectualRights>
     <coverage>
@@ -73,8 +58,8 @@
       <methodStep>
         <description>
           <para>
-  This is a place for method.
-</para>
+    This is a place for method.
+  </para>
         </description>
       </methodStep>
     </methods>
@@ -90,7 +75,7 @@
         <userId directory="https://orcid.org">https://orcid.org/0000-0000-0000-0000</userId>
         <role>Principal Investigator</role>
       </personnel>
-      <funding>NSF0000000</funding>
+      <funding>National Science Foundation NSF0000000</funding>
     </project>
     <dataTable>
       <entityName>Giant kelp</entityName>
@@ -110,6 +95,11 @@
             </simpleDelimited>
           </textFormat>
         </dataFormat>
+        <distribution>
+          <online>
+            <url>http://aaa/Giant_Kelp.csv</url>
+          </online>
+        </distribution>
       </physical>
       <attributeList>
         <attribute>
@@ -216,7 +206,7 @@
     <metadata>
       <unitList>
         <unit id="number" name="number" parentSI="" unitType="dimensionless">
-          <description>a number</description>
+          <description>a quantity or amount</description>
         </unit>
       </unitList>
     </metadata>

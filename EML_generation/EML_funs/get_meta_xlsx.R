@@ -20,7 +20,7 @@ attributes <- as.data.frame(read_xlsx (wb, sheet = "DataSetAttributes",na="")) %
 factors<- as.data.frame(read_xlsx (wb, sheet = "DataSetAttributeCodeDefinition",na=""))%>%
   filter(datasetid==dataset_id)
 
-unit_raw <- as.data.frame(read_xlsx (wb, sheet = "ListUnitDictionary",na=""))
+unit_raw <- as.data.frame(read_xlsx(wb, sheet = "ListUnitDictionary",na=""))
 
 unit <- as.data.frame(attributes) %>%
   select(datasetid,unit) %>%
@@ -36,8 +36,8 @@ people <- as.data.frame(read_xlsx  (wb, sheet = "ListPeople", na=""))
 
 creator <-dataset %>%
   filter(datasetid==dataset_id) %>%
-  select(project_PI,project_funding_title,project_funding_code) %>%
-  rename(peopleid=project_PI,projectTitle=project_funding_title,fundingNumber=project_funding_code) %>%
+  select(project_PI,project_funding_title,project_funding_agency,project_funding_code) %>%
+  rename(peopleid=project_PI,projectTitle=project_funding_title,fundingAgency=project_funding_agency,fundingNumber=project_funding_code) %>%
   mutate(authorshiprole="PI") %>%
   bind_rows(creator_raw) %>%
   filter(!is.na(peopleid)) %>%

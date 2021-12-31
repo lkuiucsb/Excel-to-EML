@@ -34,6 +34,7 @@ The first step to starting your archive. Enter data packet information in this s
 
 "project_PI": this is the name id from the listPeople tab. 
 
+"project_funding_title/agency/code": These are the information used to support the data collection of the data package you are about to publish.
 
 ### DataSetEntities
 
@@ -47,11 +48,11 @@ The first step to starting your archive. Enter data packet information in this s
 
 "entitydescription": detailed description of the data table. Usually include sample size and general information not explained elsewhere.
 
-"filetype": specific file type for the dataset. Refer to the "FileTypeList" for possible file types and notes. As of today, you don't have to fill out this, R code will detect it smartly and auto fill out file format information for you.
+"filetype": specific file type for the dataset. Refer to the "ListFileType" for possible file types and notes. For any file type that is not currently in the "ListFileType", you can add the info in the "ListFileType" tab. For most of file types, the current R code is smart enough to detect the file type, it is not necessarily to fill this out. 
 
 "urlpath": url for the dataset if you have another copy stored somewhere else. If not, leave this cell blank. Within one dataset, at this point, we accept cases that all entities have the urls or none eneity has the url. 
 
-"filename": full file names for the dataset(s) to be archived.
+"filename": full file names for the dataset(s) to be archived, including the ext. 
 
 ### DataSetAttributes
 
@@ -63,7 +64,7 @@ The first step to starting your archive. Enter data packet information in this s
 
 "formatString": defines the formatting for the "Date" class, e.g. "YYYY-MM-DD"
 
-"unit": require for "numeric" class and it is measurement units from the "listUnitDictionary" list. Refer to "listUnitDictionary" for options.
+"unit": require for "numeric" class and it is measurement units from the "listUnitDictionary" list. Refer to "listUnitDictionary" for options. Use the 'id' column to fill in the unit. 
 
 "precision": describes the precision (how many decimals) for the "numericDomain" attribute. (34.6667 precision is 0.0001)
 
@@ -158,7 +159,7 @@ The first step to starting your archive. Enter data packet information in this s
  
 ### ListFileType- Reference
 
-As of today (July 26th, 2020), this list is just a reference for the file type in the entitysheet. It is not currently used for code generation. The R code is built to auto detect the data table format (e.g. csv, txt, delimiter, and so forth) as well as the entity format based on MIME type definition.   
+As of today (July 26th, 2020), this list is just a reference for the file type in the entitysheet. Only the "quotecharacter" column is used for code generation if you have csv or txt files. The R code is built to auto detect the data table format (e.g. csv, txt, delimiter, and so forth) as well as the entity format based on MIME type definition.   
 
 ### ListUnitDictionary - Reference
 

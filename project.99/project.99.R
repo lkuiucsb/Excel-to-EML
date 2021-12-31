@@ -12,7 +12,7 @@ library(dplyr)
 #change the following number based on each of the datasets
 dataset_id=99
 
-folder_path<- "/Users/lkui/Documents/GitHub/Excel-to-EML/"
+folder_path<- "/Users/kuili/Desktop/Github/Excel-to-EML/"
 #end user edit zone###########
 ######################################
 #loading all the functions
@@ -30,3 +30,4 @@ eml_in_template <- generate_EML_Assemblyline(project_path= paste0(folder_path,"p
 
 # Export EML --------------------------------------------------------------------
 write_eml_excel(eml_in_template)
+

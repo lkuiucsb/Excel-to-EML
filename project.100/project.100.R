@@ -11,7 +11,7 @@ library(dplyr)
 #change the following number based on each of the datasets
 dataset_id=100
 
-folder_path<- "/Users/lkui/Documents/GitHub/Excel-to-EML/"
+folder_path<- "/Users/kuili/Desktop/Github/Excel-to-EML/"
 #end user edit zone###########
 
 ######################################
