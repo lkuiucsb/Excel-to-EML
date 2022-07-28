@@ -108,7 +108,7 @@ The first step to starting your archive. Enter data packet information in this s
 
 "geographicdescription": describes the geographic location where the data was collected and/or generated.
 
-"northboudingcoordinate": coordinate for the north-most latitude of the location in decimal degrees.
+"northboundingcoordinate": coordinate for the north-most latitude of the location in decimal degrees.
 
 "southboundingcoordinate": coordinate for the south-most latitude of the location in decimal degrees.
 
@@ -116,7 +116,7 @@ The first step to starting your archive. Enter data packet information in this s
 
 "westboundingcoordinate": coordinate for the west-most longitude of the location in decimal degrees.
 
-*four coordinates could draw a rectangular area, line or single point depending on the bouding coordinates you provide
+*four coordinates could draw a rectangular area, line or single point depending on the bounding coordinates you provide
 
 
 ### ListPeople
