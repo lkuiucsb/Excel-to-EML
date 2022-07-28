@@ -50,7 +50,7 @@ The first step to starting your archive. Enter data packet information in this s
 
 "filetype": specific file type for the dataset. Refer to the "ListFileType" for possible file types and notes. For any file type that is not currently in the "ListFileType", you can add the info in the "ListFileType" tab. For most of file types, the current R code is smart enough to detect the file type, it is not necessarily to fill this out. 
 
-"urlpath": url for the dataset if you have another copy stored somewhere else. If not, leave this cell blank. Within one dataset, at this point, we accept cases that all entities have the urls or none eneity has the url. 
+"urlpath": url for the dataset if you have another copy stored somewhere else. If not, leave this cell blank. Within one dataset, at this point, we accept cases that all entities have the urls or none entity has the url. 
 
 "filename": full file names for the dataset(s) to be archived, including the ext. 
 
